@@ -25,7 +25,7 @@ export default function Index() {
   }, []);
     const router = useRouter();
     const handleNext = () => {
-      const enteredOtp = otp.join(""); // Combine OTP array into a single string
+      const enteredOtp = otp.join(""); 
       if (enteredOtp.length < 6 || otp.includes("")) {
         Alert.alert("Incomplete OTP", "Please enter the complete OTP to proceed.");
       } else {
